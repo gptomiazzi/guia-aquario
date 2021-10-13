@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Roboto', sans-serif;
-    background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    background: #FEFEFE;
   }
 
   #__next {

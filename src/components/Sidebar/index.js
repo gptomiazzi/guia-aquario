@@ -3,7 +3,6 @@ import styled from "styled-components";
 export function Sidebar() {
     return (
       <Sidebar.Wrapper as="aside" className="sidebar">
-
         <a href="/">
           <img src="/images/logo.png" className="logo-icon" />
         </a>
@@ -34,23 +33,24 @@ export function Sidebar() {
   Sidebar.Wrapper = styled.div`
     
     grid-area: 'sidebar';
-    border-right: 1px solid black;
+    border-right: 2px solid black;
     padding: 1rem;
 
     .logo-icon {
-      margin-left: 1.5em;
+      margin-left: 1.8em;
       width: 130px;
       height: auto;
       transform: rotate(45deg);
     }
-      
     p {
       background: black;
-      height: 1px;
-      width: 200px;
+      height: 2px;
+      width: 10em;
       margin-left: 5%;
     }
-
+    nav {
+      padding: 1em;
+    }
     nav a {
       font-size: 16px;
       color: #000000;
