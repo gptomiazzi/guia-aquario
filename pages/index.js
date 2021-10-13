@@ -5,13 +5,13 @@ import WebFont from "webfontloader";
 
 export default function Home() {
 
-    useEffect(() => {
+    /*useEffect(() => {
         WebFont.load({
             google: {
                 families: ['Poppins', 'Roboto']
             }
         });
-    }, []);
+    }, []);*/
 
     return (
 
