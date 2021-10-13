@@ -1,22 +1,24 @@
-import styled from "styled-components"
+import { Sidebar } from "../src/components/Sidebar/index.js";
+import { MainGrid } from "../src/components/MainGrid/index.js";
+import { useEffect } from "react";
+import WebFont from "webfontloader";
 
 export default function Home() {
-  
-    const MainGrid = styled.main`
-        display: grid;
-        grid-template-areas: "sidebar content";
-        grid-template-columns: 15% 1fr;
-        grid-template-rows: 100vh;
-        grid-column-gap: 1px;
-        grid-row-gap: 0px;
-    `;
+
+    useEffect(() => {
+        WebFont.load({
+            google: {
+                families: ['Poppins', 'Roboto']
+            }
+        });
+    }, []);
 
     return (
 
         <MainGrid>
-            <section className="teste">
-                <p style={{ gridArea: "sidebar" }}>aaaaaaaaaaaaaaaaaa</p>
-            </section>
+            <Sidebar />
+
+
         </MainGrid>
     )
 }

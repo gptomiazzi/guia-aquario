@@ -44,7 +44,7 @@ export default function LoginScreen() {
   const router = useRouter();
 
   return (
-    <main style={{ display: 'flex', flexDirection: 'column' , flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <main style={{ display: 'flex', flexDirection: 'column' , flex: 1, alignItems: 'center', justifyContent: 'center' , background: '#258ace'}}>
 
       <LoginArea>
 
