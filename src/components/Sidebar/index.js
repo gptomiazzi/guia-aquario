@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export function Sidebar() {
     return (
-      <Sidebar.Wrapper as="aside" className="sidebar">
+      <Sidebar.Wrapper>
         <a href="/">
           <img src="/images/logo.png" className="logo-icon" />
         </a>
@@ -32,12 +32,12 @@ export function Sidebar() {
   }
   Sidebar.Wrapper = styled.div`
     
-    grid-area: 'sidebar';
+    grid-area: "sidebar";
     border-right: 2px solid black;
     padding: 1rem;
 
     .logo-icon {
-      margin-left: 1.8em;
+      margin-left: 2em;
       width: 130px;
       height: auto;
       transform: rotate(45deg);
@@ -45,11 +45,11 @@ export function Sidebar() {
     p {
       background: black;
       height: 2px;
-      width: 10em;
-      margin-left: 5%;
+      width: auto;
+      margin: 5% 0;
     }
     nav {
-      padding: 1em;
+      margin-top: 1em;
     }
     nav a {
       font-size: 16px;
