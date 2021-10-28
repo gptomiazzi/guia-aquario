@@ -9,13 +9,13 @@ export function Sidebar() {
 
         <nav>
         <p />
-          <a href="/">
+          <a href="/litragemEVidro">
             <img src="/images/litragemevidro.png" />
             Litragem e vidro
           </a>
-          <a href="/">
+          <a href="/listagemPeixe">
             <img src="/images/parametros.png" />
-            Parâmetros p/ peixes
+            Listagem de peixes
           </a>
           <a href="/">
             <img src="/images/doencas.png" />
@@ -37,7 +37,8 @@ export function Sidebar() {
     padding: 1rem;
 
     .logo-icon {
-      margin-left: 2em;
+      margin-left: auto;
+      margin-right: auto;
       width: 130px;
       height: auto;
       transform: rotate(45deg);

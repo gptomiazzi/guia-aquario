@@ -15,7 +15,6 @@ export const ContentWrapper = styled.section`
         grid-column: 2 / 2;
     }
     .conteudo__secundario:nth-child(4) {
-        background: url('/images/papaterra.jfif') center / cover no-repeat;
-        grid-column: 3 / 3;
+        
     }
 `;

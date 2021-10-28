@@ -32,9 +32,6 @@ export default function Home() {
                 <div className="conteudo__secundario">
                     <h3>papaterra</h3>
                 </div>
-                <div className="conteudo__secundario">
-                    <h3>papacu</h3>
-                </div>
             </ContentWrapper>
 
         </MainGrid>
