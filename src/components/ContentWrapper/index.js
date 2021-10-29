@@ -1,18 +1,25 @@
 import styled from "styled-components";
 
-export const ContentWrapper = styled.section`
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33.33% 33.33% 33.33%;
-    /* grid-gap: 1px; */
+export const ContentWrapper = styled.div`
+
+    .conteudo__principal {
+        padding: 1.5em;
+        text-align: justify;
+       
+    }
 
     .conteudo__secundario:nth-child(2) {
-        background: url('/images/doencas.png') center / cover no-repeat;
-        grid-column: 1 / 1;
+        display: inline-block;
+        padding: 1.5em;
+        text-align: justify;
+        width: 25%;
+       
     }
     .conteudo__secundario:nth-child(3) {
-        background: url('/images/iluminacao.png') center / cover no-repeat;
-        grid-column: 2 / 2;
+        display: inline-block;
+        padding: 1.5em;
+        text-align: justify;
+        width: 25%;
     }
     .conteudo__secundario:nth-child(4) {
         

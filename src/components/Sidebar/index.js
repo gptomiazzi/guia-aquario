@@ -7,6 +7,8 @@ export function Sidebar() {
           <img src="/images/logo.png" className="logo-icon" />
         </a>
 
+        <div className="teste"></div>
+
         <nav>
         <p />
           <a href="/litragemEVidro">
@@ -33,15 +35,16 @@ export function Sidebar() {
   Sidebar.Wrapper = styled.div`
     
     grid-area: "sidebar";
-    border-right: 2px solid black;
     padding: 1rem;
 
     .logo-icon {
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 1em;
       width: 130px;
       height: auto;
       transform: rotate(45deg);
+      @media(min-width: 1600px) {
+        margin: 0 3em;
+      }
     }
     p {
       background: black;
