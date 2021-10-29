@@ -8,7 +8,7 @@ export default function LitragemEVidro() {
 
             <div>
                 <form onSubmit={(e) => {
-                    e.preventDefault();
+                    e.preventDefault()
 
                     const altura = document.querySelector("#altura").value;
                     const largura = document.querySelector("#largura").value;
