@@ -32,20 +32,51 @@ export default function Home() {
                 <div className="conteudo__secundario">
                     <h3>O substrato muda tudo</h3>
 
-                    <p>&emsp;&emsp;O substrato é determinante na montagem de seu aquário, afinal ele influência diretamente na água. Quando escolhemos um cascalho de origem calcárea é importante lembrar que nesse caso a água do aquário sempre será mineralizada e de PH alcalino, ou seja, não se pode colocar neste aquário peixes de água ácida. Quando estamos escolhendo o substrato, estamos sem perceber determinando qual tipo de ecossistema vamos reproduzir.</p>
+                    <p>
+                        &emsp;&emsp;O substrato é determinante na montagem de seu aquário, afinal ele influência diretamente na água. Quando escolhemos um cascalho de origem calcárea é importante lembrar que nesse caso a água do aquário sempre será mineralizada e de PH alcalino, ou seja, não se pode colocar neste aquário peixes de água ácida. Quando estamos escolhendo o substrato, estamos sem perceber determinando qual tipo de ecossistema vamos reproduzir.
+                    </p>
 
-                    <p>&emsp;&emsp;É importante lembrar que “substrato” engloba todos os outros elementos que vão interagir quimicamente no ambiente do aquário, como elementos decorativos e materiais filtrantes, por isso é necessário escolher com atenção todos os elementos que estarão presentes no aquário.</p>
+                    <p>
+                        &emsp;&emsp;É importante lembrar que “substrato” engloba todos os outros elementos que vão interagir quimicamente no ambiente do aquário, como elementos decorativos e materiais filtrantes, por isso é necessário escolher com atenção todos os elementos que estarão presentes no aquário.
+                    </p>
                 </div>
                 <div className="conteudo__secundario">
-                    <h3>O substrato muda tudo</h3>
+                    <h3>Iluminação</h3>
 
-                    <p>&emsp;&emsp;O substrato é determinante na montagem de seu aquário, afinal ele influência diretamente na água. Quando escolhemos um cascalho de origem calcárea é importante lembrar que nesse caso a água do aquário sempre será mineralizada e de PH alcalino, ou seja, não se pode colocar neste aquário peixes de água ácida. Quando estamos escolhendo o substrato, estamos sem perceber determinando qual tipo de ecossistema vamos reproduzir.</p>
-
-                    <p>&emsp;&emsp;É importante lembrar que “substrato” engloba todos os outros elementos que vão interagir quimicamente no ambiente do aquário, como elementos decorativos e materiais filtrantes, por isso é necessário escolher com atenção todos os elementos que estarão presentes no aquário.</p>
+                    <p>
+                        &emsp;&emsp;Seguindo a mesma lógica da escolha do substrato, nós devemos adequar a iluminação ao sistema que gostaríamos de ter. O objetivo principal do aquário é tentar reproduzir ao máximo o habitat natural dos peixes, por isso devemos compará-los com os ambientes naturais que queremos reproduzir. Por exemplo, um recife de corais multicoloridos próximos à superfície do mar. Obviamente este é um ambiente bastante ensolarado, neste caso a nossa escolha seria por um forte sistema de iluminação para este aquário.
+                    </p>
                 </div>
                 <div className="conteudo__secundario">
-                    
+                    <h3>Temperatura</h3>
+
+                    <p>
+                        &emsp;&emsp;A temperatura adequada para o aquário é aquela que busca reproduzir as mesmas condições do habitat que você quer retratar. O objetivo é sempre tentar copiar a natureza. Mas a pergunta que permanece é: “como controlar a temperatura?”, como na maioria das vezes o problema maior se resume ao aquecimento, basta manter um aquecedor com termostato adequado ao tamanho do aquário (em geral na proporção de 1 Watt por litro). Este aparelho fará o controle da temperatura, só aquecendo quando necessário e se mantendo desligado nos outros períodos, já em relação ao resfriamento da água você pode fazer uso de um resfriador com termostato, que se parece com um pequeno ar condicionado ou utilizar um cooler, que é um pequeno ventilador que resfria o aquário.
+                    </p>
                 </div>
+                <div className="conteudo__secundario">
+                    <h3>Movimentação da água</h3>
+
+                    <p>
+                        &emsp;&emsp;Em aquários menos complexos, uma simples bomba de circulação ou um pequeno filtro são suficientes para a reprodução do movimento da água presente no habitat natural do peixe em seu aquário. Aquários mais complexos podem exigir uso de aparelhos que simulam a movimentação das ondas do mar, mas é válido lembrar que tudo é uma questão de adequação ao ambiente criado. É importante prestar atenção aos excessos de decorações e objetos dentro do aquário, pois estes diminuem a movimentação de água.
+                    </p>
+                </div>
+                <div className="conteudo__secundario">
+                    <h3>Sistemas de filtragem</h3>
+
+                    <p>
+                        &emsp;&emsp;O aquário é um sistema fechado e, por isso, tudo o que colocamos lá dentro fica por lá, ou seja, é um sistema que tende à acumulação, por isso a utilização de um sistema de filtragem adequado é muito importante! Para manter o equilíbrio do sistema aquático, além dos sistemas de filtragem em funcionamento (seja mecânico ou químico), é fundamental que se complemente a manutenção dos ecossistemas com trocas parciais da água, promovendo a renovação do ambiente e um aquário saudável e equilibrado.
+                    </p>
+                </div>
+                <div className="conteudo__secundario">
+                    <h3>Os cuidados com a água</h3>
+
+                    <p>
+                        &emsp;&emsp;Não basta despejar água da torneira direto para o aquário, é necessário ter certos cuidados.  Seja na hora de fazer trocas parciais ou no primeiro momento de encher o aquário, é essencial realizar testes hidrológicos e preparar a água para que ela atinja os níveis adequados. Em se tratando de água da torneira, um dos preparos mais importantes é fazer o uso de condicionadores anticloro, já que o cloro presente na água encanada é tóxico para os peixes.
+                    </p>
+                </div>
+        
+
             </ContentWrapper>
 
         </MainGrid>
