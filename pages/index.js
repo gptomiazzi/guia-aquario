@@ -3,6 +3,7 @@ import { MainGrid } from "../src/components/MainGrid/index.js";
 import { useEffect } from "react";
 import WebFont from "webfontloader";
 import { ContentWrapper } from "../src/components/ContentWrapper/index.js";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -30,22 +31,39 @@ export default function Home() {
                     <p>&emsp;&emsp;Na hora de escolher os peixes de aquário, é necessário se certificar de que todos compartilhem a mesma faixa de temperatura e de pH. Também é importante que os peixes sejam sociáveis e se deem bem com as outras espécies presentes no aquário.</p>
                 </div>
                 <div className="conteudo__secundario">
-                    <h3>O substrato muda tudo</h3>
+                    <section>
+                        <h3>O substrato muda tudo</h3>
 
-                    <p>
-                        &emsp;&emsp;O substrato é determinante na montagem de seu aquário, afinal ele influência diretamente na água. Quando escolhemos um cascalho de origem calcárea é importante lembrar que nesse caso a água do aquário sempre será mineralizada e de PH alcalino, ou seja, não se pode colocar neste aquário peixes de água ácida. Quando estamos escolhendo o substrato, estamos sem perceber determinando qual tipo de ecossistema vamos reproduzir.
-                    </p>
+                        <p>
+                            &emsp;&emsp;O substrato é determinante na montagem de seu aquário, afinal ele influência diretamente na água. Quando escolhemos um cascalho de origem calcárea é importante lembrar que nesse caso a água do aquário sempre será mineralizada e de PH alcalino, ou seja, não se pode colocar neste aquário peixes de água ácida. Quando estamos escolhendo o substrato, estamos sem perceber determinando qual tipo de ecossistema vamos reproduzir.
+                        </p>
 
-                    <p>
-                        &emsp;&emsp;É importante lembrar que “substrato” engloba todos os outros elementos que vão interagir quimicamente no ambiente do aquário, como elementos decorativos e materiais filtrantes, por isso é necessário escolher com atenção todos os elementos que estarão presentes no aquário.
-                    </p>
+                        <p>
+                            &emsp;&emsp;É importante lembrar que “substrato” engloba todos os outros elementos que vão interagir quimicamente no ambiente do aquário, como elementos decorativos e materiais filtrantes, por isso é necessário escolher com atenção todos os elementos que estarão presentes no aquário.
+                        </p>
+
+                        <Image 
+                            className="image"
+                            src="/images/substrato.jpg"
+                            width={250}
+                            height={250}
+                        />
+                    </section>
                 </div>
                 <div className="conteudo__secundario">
-                    <h3>Iluminação</h3>
+                    <section>
+                        <h3>Iluminação</h3>
 
-                    <p>
-                        &emsp;&emsp;Seguindo a mesma lógica da escolha do substrato, nós devemos adequar a iluminação ao sistema que gostaríamos de ter. O objetivo principal do aquário é tentar reproduzir ao máximo o habitat natural dos peixes, por isso devemos compará-los com os ambientes naturais que queremos reproduzir. Por exemplo, um recife de corais multicoloridos próximos à superfície do mar. Obviamente este é um ambiente bastante ensolarado, neste caso a nossa escolha seria por um forte sistema de iluminação para este aquário.
-                    </p>
+                        <p>
+                            &emsp;&emsp;Seguindo a mesma lógica da escolha do substrato, nós devemos adequar a iluminação ao sistema que gostaríamos de ter. O objetivo principal do aquário é tentar reproduzir ao máximo o habitat natural dos peixes, por isso devemos compará-los com os ambientes naturais que queremos reproduzir. Por exemplo, um recife de corais multicoloridos próximos à superfície do mar. Obviamente este é um ambiente bastante ensolarado, neste caso a nossa escolha seria por um forte sistema de iluminação para este aquário.
+                        </p>
+                        
+                        <Image 
+                            src="/images/iluminacao.jpg"
+                            width={250}
+                            height={250}
+                        />
+                    </section>
                 </div>
                 <div className="conteudo__secundario">
                     <h3>Temperatura</h3>

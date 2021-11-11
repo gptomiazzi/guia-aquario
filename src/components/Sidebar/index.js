@@ -11,11 +11,11 @@ export function Sidebar() {
 
         <nav>
         <p />
-          <a href="/litragemEVidro">
+          <a href="/LitragemEVidro">
             <img src="/images/litragemevidro.png" />
             Litragem e vidro
           </a>
-          <a href="/listagemPeixe">
+          <a href="/ListagemPeixes">
             <img src="/images/parametros.png" />
             Listagem de peixes
           </a>
@@ -24,7 +24,7 @@ export function Sidebar() {
             Doenças
           </a>
           <a href="/">
-            <img src="/images/iluminacao.png" />
+            <img src="/images/lampada.png" />
             Iluminação
           </a>
           <p />
@@ -36,8 +36,11 @@ export function Sidebar() {
     
     grid-area: "sidebar";
     padding: 1rem;
+    height: 2200px;
+    border-right: 2px solid black;
 
     .logo-icon {
+      border: none;
       margin: 0 1em;
       width: 130px;
       height: auto;

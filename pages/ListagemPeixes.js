@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ContentWrapper } from "../src/components/ContentWrapper/index.js";
 import { MainGrid } from "../src/components/MainGrid/index.js";
 import { Sidebar } from "../src/components/Sidebar/index.js";
 
@@ -50,19 +51,24 @@ export default function ListagemPeixe() {
                         {especie: "Tetra Neon Negro", phI: 5.6, phF: 7.2, tempI: 24, tempF: 28, tamanho: 5},
                         {especie: "Tricogaster", phI: 6, phF: 7.2, tempI: 24, tempF: 30, tamanho: 12}
                     ];
+                    let teste = [];
                     
                     const ph = document.querySelector("#inputPH").value;
                     const temp = document.querySelector("#inputTemperatura").value;
-                
+                    
                     if (ph < 5 || ph > 7.8 && temp < 18 || temp > 30) {
-                        console.log("sem condições amigão")
+                        alert("sem condições amigão")
                     } else {
                         listaPeixes.map((peixe) => {
+
                             if (ph >= peixe.phI && ph <= peixe.phF && temp >= peixe.tempI && temp <= peixe.tempF) {
-                                console.log(peixe.especie);
+                                teste.push(peixe.especie)
                             }
                         })
                     }
+
+                    const listaAtt = [...teste]
+                    setPeixes(listaAtt)
                 }}>
 
                     <span>Ph</span>
@@ -73,6 +79,19 @@ export default function ListagemPeixe() {
 
                     <button type="submit">Listar</button>
                 </form>
+
+                <ContentWrapper>
+                    <ul className="listaPeixes">
+                        {listaPeixesAtt.map((current) => {
+                            return (
+                                <li className="listaPeixes__li">
+                                    <span>{current}</span>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </ContentWrapper>
+
             </div>
                 
         </MainGrid>
