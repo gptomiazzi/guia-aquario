@@ -7,6 +7,11 @@ export const ContentWrapper = styled.div`
         text-align: justify;
        
     }
+
+     .image {
+        margin-bottom: 10rem;
+    }
+
     .conteudo__secundario {
         padding: 1em;
         text-align: justify;
@@ -16,7 +21,7 @@ export const ContentWrapper = styled.div`
         margin: 11% 0;
     }
 
-    .litragemEVidro label {
+    .litragemEVidro label, .listaPeixes label {
         display: flex;
         flex-direction: column;
         padding: 0.5em;
@@ -26,9 +31,10 @@ export const ContentWrapper = styled.div`
         margin: 0.5em 0;
     }
     
-    .litragemEVidro button {
+    .litragemEVidro button,  .listaPeixes button {
         border-radius: 22px;
         border: 2px solid black;
+        background: #EEEEEE;
         width: 127px;
         height: 39px;
         margin: 1em 25%;
@@ -36,13 +42,14 @@ export const ContentWrapper = styled.div`
 
     }
 
-    .litragemEVidro button :hover {
+    .litragemEVidro button :hover, .listaPeixes button:hover {
         transition: 0.5s all;
-        background: #d6cdcd;
+        background: #E5E5E5;
     }
     
-    .litragemEVidro input {
+    .litragemEVidro input, .listaPeixes input {
         border-radius: 22.5px;
+        background: #EEEEEE;
         text-align: center;
         height: 45px;
         width: 238px;
@@ -56,5 +63,15 @@ export const ContentWrapper = styled.div`
         li {
             margin: 0.5em 0;
         }
+    }
+
+    .listaPeixes__container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 1em;
+        border: 2px solid black;
+        border-radius: 22.5px;
+        background: #FEF1DF;
     }
 `;

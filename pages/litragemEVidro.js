@@ -26,7 +26,7 @@ export default function LitragemEVidro() {
                         if (litragem <= 0) {
                             espessura = 0;
                         }
-                       else if (litragem > 0 && litragem <= 30) {
+                        else if (litragem > 0 && litragem <= 30) {
                             espessura = 3;
                         } else if (litragem > 30 && litragem <= 100) {
                             espessura = 5;
@@ -65,7 +65,7 @@ export default function LitragemEVidro() {
                             <input placeholder="Insira o comprimento do aquário" type="text" id="comprimento" autoComplete="off"/>
                         </label>
 
-                        <button type="submit"> Calcular espessura </button>
+                        <button type="submit"> Calcular </button>
                     </form>
                     <h3>
                         O aquário terá: {litragem}L e o vidro {espessura}mm de espessura

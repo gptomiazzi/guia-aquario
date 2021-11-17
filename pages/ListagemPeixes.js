@@ -9,9 +9,12 @@ export default function ListagemPeixe() {
         <MainGrid>
             <Sidebar />
 
-            <div>
+            <ContentWrapper>
+            <div className="listaPeixes" style={{ display: 'flex', flexDirection: 'column' , flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+
                 <form onSubmit={(e) => {
                     e.preventDefault();
+
                     const listaPeixes = [
                         {especie: "Acará-Bandeira", phI: 6, phF: 7, tempI: 24, tempF: 28, tamanho: 15},
                         {especie: "Acará-Disco", phI: 6.6, phF: 7, tempI: 24, tempF: 28, tamanho: 15},
@@ -70,29 +73,34 @@ export default function ListagemPeixe() {
                     const listaAtt = [...teste]
                     setPeixes(listaAtt)
                 }}>
-
-                    <span>Ph</span>
-                    <input placeholder="Insira o PH" type="text" id="inputPH" autoComplete="off"/>
-
-                    <span>Temperatura</span>
-                    <input placeholder="Insira a temperatura" type="text" id="inputTemperatura" autoComplete="off"/>
+                <div className="listaPeixes">
+                    <label>
+                        <span>Ph</span>
+                        <input placeholder="Insira o PH" type="text" id="inputPH" autoComplete="off"/>
+                    </label>
+                    <label>
+                        <span>Temperatura</span>
+                        <input placeholder="Insira a temperatura" type="text" id="inputTemperatura" autoComplete="off"/>
+                    </label>
 
                     <button type="submit">Listar</button>
+                </div>
                 </form>
-
-                <ContentWrapper>
+                
                     <ul className="listaPeixes">
-                        {listaPeixesAtt.map((current) => {
-                            return (
-                                <li className="listaPeixes__li">
-                                    <span>{current}</span>
-                                </li>
-                            )
-                        })}
+                        <div className="listaPeixes__container">
+                            <h3>Lista de peixes:</h3>
+                            {listaPeixesAtt.map((current) => {
+                                return (
+                                    <li className="listaPeixes__li">
+                                        <span>{current}</span>
+                                    </li>
+                                )
+                            })}
+                        </div>
                     </ul>
+                </div>
                 </ContentWrapper>
-
-            </div>
                 
         </MainGrid>
     )

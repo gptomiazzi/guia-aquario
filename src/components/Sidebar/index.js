@@ -19,14 +19,14 @@ export function Sidebar() {
             <img src="/images/parametros.png" />
             Listagem de peixes
           </a>
-          <a href="/">
+         {/*  <a href="/">
             <img src="/images/doencas.png" />
             Doenças
           </a>
           <a href="/">
             <img src="/images/lampada.png" />
             Iluminação
-          </a>
+          </a> */}
           <p />
         </nav>
       </Sidebar.Wrapper>
@@ -36,7 +36,7 @@ export function Sidebar() {
     
     grid-area: "sidebar";
     padding: 1rem;
-    height: 2200px;
+    height: 100vmax;
     border-right: 2px solid black;
 
     .logo-icon {
@@ -46,7 +46,7 @@ export function Sidebar() {
       height: auto;
       transform: rotate(45deg);
       @media(min-width: 1600px) {
-        margin: 0 3em;
+        margin: 0 2.5em;
       }
     }
     p {

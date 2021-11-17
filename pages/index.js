@@ -20,7 +20,7 @@ export default function Home() {
         <MainGrid>
             <Sidebar />
 
-            <ContentWrapper>
+            <ContentWrapper className="teste">
                 <div className="conteudo__principal">
                     <h3>Primeiros passos para ter seu aquario</h3>
 
@@ -31,7 +31,6 @@ export default function Home() {
                     <p>&emsp;&emsp;Na hora de escolher os peixes de aquário, é necessário se certificar de que todos compartilhem a mesma faixa de temperatura e de pH. Também é importante que os peixes sejam sociáveis e se deem bem com as outras espécies presentes no aquário.</p>
                 </div>
                 <div className="conteudo__secundario">
-                    <section>
                         <h3>O substrato muda tudo</h3>
 
                         <p>
@@ -48,10 +47,8 @@ export default function Home() {
                             width={250}
                             height={250}
                         />
-                    </section>
                 </div>
                 <div className="conteudo__secundario">
-                    <section>
                         <h3>Iluminação</h3>
 
                         <p>
@@ -63,7 +60,6 @@ export default function Home() {
                             width={250}
                             height={250}
                         />
-                    </section>
                 </div>
                 <div className="conteudo__secundario">
                     <h3>Temperatura</h3>
